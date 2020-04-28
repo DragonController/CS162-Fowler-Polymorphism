@@ -11,5 +11,13 @@ public class Main {
             System.out.println(employee.toString());
             System.out.println();
         }
+        Owner owner = new Owner();
+        for (Employee employee : employeeList) {
+            if (employee instanceof Engineer) {
+                owner.giveRaise(employee, 25);
+            }
+            System.out.println(employee.toString());
+            System.out.println();
+        }
     }
 }
